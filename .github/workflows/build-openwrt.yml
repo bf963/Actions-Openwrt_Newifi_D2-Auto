@@ -11,17 +11,17 @@ name: Build OpenWrt
 on:
   repository_dispatch:
   workflow_dispatch:
-  release:
-    types: published
-  push:
-    branches:
-      - master
-    paths:
-     - ''
-  schedule:
-    - cron: 0 6 * * 5
-  watch:
-    types: started
+  # release:
+  #   types: published
+  # push:
+  #   branches:
+  #     - master
+  #   paths:
+  #    - ''
+  # schedule:
+  #   - cron: 0 6 * * 5
+  # watch:
+  #   types: started
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
